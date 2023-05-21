@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es_CO">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge Encriptador de texto con javascript</title>
+
+    <meta name="author" content="Gustavo Marquez Prieto">
+
+    <!-- Importaciones -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="js/logica.js"></script>
+
+</head>
+<body>
+
+<header>
+    <img src="img/Logo.png" alt="">
+</header>
+
+<div class="contenedor">
+    <div class="formulario">
+        <div>
+            <textarea id="textarea">Ingrese el texto aqui</textarea>
+            <p class="informacion"><span>!</span>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones-formulario">
+            <button class="boton boton-encriptar" onclick="accion('encriptar')">Encriptar</button>
+            <button class="boton boton-desencriptar" onclick="accion('desencriptar')">Desencriptar</button>
+        </div>
+    </div>
+    <div class="contenedor-sin-resultados" id="contenedor-sin-resultados">
+        <div>
+            <img src="img/Muneco.png" alt="">
+            <p class="titulo-sin-informacion">Ningún mensaje fue encontrado</p>
+            <p class="parrafo-sin-informacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </div>
+    <div class="contenedor-con-resultados display-none" id="contenedor-con-resultados">
+        <div class="contenedor-texto-resultado">
+            <p class="text-resultado" id="text-resultado"></p>
+            <button class="boton boton-copiar" onclick="copiarTextoClipboard()">Copiar</button>
+        </div>
+    </div>
+
+</div>
+<footer class="text-centrado">
+    <p>Challenge Encriptador de texto con javascript</p>
+    <p>Desarrollado por <strong>Gustavo Marquez Prieto</strong></p>
+</footer>
+
+
+</body>
+</html>
